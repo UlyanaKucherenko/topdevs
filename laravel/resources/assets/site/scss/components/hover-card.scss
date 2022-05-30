@@ -1,0 +1,33 @@
+.hover-card {
+  cursor: pointer;
+  --hover-card-color: var(--red-lighter);
+
+  &__text {
+    display: inline-block;
+
+    &:after {
+      content: '';
+      display: block;
+      margin: 0 auto;
+      margin-top: 3px;
+      width: 0;
+      height: 2px;
+      transition: .5s ease-in-out;
+      background-color: var(--hover-card-color);
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    .hover-card__arrow {
+      @include arrow-hover;
+    }
+
+    .hover-card__text {
+      &:after {
+        width: 100%;
+        opacity: 1;
+      }
+    }
+  }
+}

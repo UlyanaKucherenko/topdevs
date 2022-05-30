@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+:root {
+  // - - - - - FONTS - - - - - //
+  --ProximaNova: ProximaNova, Arial, Helvetica, sans-serif;
+  --Muli: Muli, Arial, Helvetica, sans-serif;
+  --Audiowide: Audiowide, sans-serif;
+
+  // - - - - - COLORS - - - - - //
+  --red-main: #CE0737;
+  --red-dark: #A00027;
+  --red-light: #E0083C;
+  --red-lighter: #ff5252;
+  --red-gradient: -webkit-linear-gradient(93.59deg, #CE0737 -1.55%, #E7063C 47.52%, #E9043B 103.31%);
+
+  --black-main: #3A3A3A;
+  --black-dark: #2D2C2C;
+  --black-form: #282828;
+  --black-form-hover: #222222;
+
+  --white-main: #FAFAFA;
+  --white-clear: #FFFFFF;
+
+  --grey-main: #F8F8F8;
+  --grey-dark: #505050;
+  --grey-light: #B6B6B6;
+  --grey-lighter: #C4C4C4;
+
+  --blue-main: #1A379C;
+  --blue-light: #145DCC;
+
+  --vuetify-blue-grey: #546E7A;
+  --vuetify-green: #43A047;
+  --vuetify-orange: #FB8C00;
+  --vuetify-red: #E53935;
+  --vuetify-blue: #1E88E5;
+}

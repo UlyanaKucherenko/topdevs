@@ -1,0 +1,30 @@
+.tag {
+  border: 1px solid var(--red-lighter);
+  border-radius: 20px;
+  padding: .8rem 2rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  line-height: 120%;
+  transition: .3s;
+
+  &:hover {
+    background: #ce073714;
+  }
+
+  &--active {
+    background: #ce07374a;
+
+    &:hover {
+      background: #ce073759;
+    }
+  }
+
+  &--unclickable {
+    cursor: default;
+    
+    &:hover {
+      background: transparent;
+    }
+  }
+}

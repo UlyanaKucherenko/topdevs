@@ -1,0 +1,4 @@
+*
+!.gitignore
+.sql
+!database_import.sh

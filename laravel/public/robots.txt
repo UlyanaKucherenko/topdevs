@@ -1,0 +1,10 @@
+User-agent: *
+
+Disallow: /404/
+Noindex: /404/
+
+Disallow: /policy/cookies
+Noindex: /policy/cookies
+
+Disallow: /policy/privacy
+Noindex: /policy/privacy

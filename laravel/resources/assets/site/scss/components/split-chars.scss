@@ -1,0 +1,9 @@
+.split-chars {
+  &__word {
+    white-space: nowrap;
+  }
+
+  &__char {
+    display: inline-block;
+  }
+}

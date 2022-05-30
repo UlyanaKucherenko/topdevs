@@ -1,0 +1,92 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 16px;
+  color: var(--black-main);
+}
+
+html, body {
+  font-family: var(--ProximaNova);
+  overflow-x: hidden;
+  background-color: var(--white-main);
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--Muli);
+  font-weight: bold;
+}
+
+h1, .text-h1 {
+  font-size: 4.375rem;
+  letter-spacing: .05em;
+  line-height: 120%;
+
+  @media (max-width: 1400px) {
+    font-size: 3.675rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 3.075rem;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 2.775rem;
+  }
+}
+
+h2, .text-h2 {
+  font-size: 3.375rem;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+
+  @media (max-width: 1400px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 2.675rem;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 2.375rem;
+  }
+}
+
+h3, .text-h3 {
+  font-size: 2.5rem;
+  font-family: var(--ProximaNova);
+  line-height: 150%;
+  font-weight: 600;
+
+  @media (max-width: 1400px) {
+    font-size: 2.2rem;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 1.9rem;
+  }
+}
+
+h4, .text-h4 {
+  font-size: 2rem;
+  font-family: var(--ProximaNova);
+  font-weight: 700;
+
+  @media (max-width: 1400px) {
+    font-size: 1.7rem;
+  }
+}
+
+p, .text-p {
+  font-size: 1rem;
+  font-family: var(--ProximaNova);
+  line-height: 1.75rem;
+}

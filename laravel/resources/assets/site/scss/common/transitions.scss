@@ -1,0 +1,23 @@
+// - - - - - - VUE TRANSITIONS - - - - - - //
+
+:root {
+  --fade-duration: .3s;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity var(--fade-duration);
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+
+.fade-top-enter-active, .fade-top-leave-active {
+  transition: var(--fade-duration);
+}
+
+.fade-top-enter, .fade-top-leave-to {
+  transform: translateY(-20%);
+  opacity: 0;
+}
+
+// - - - - - - - - - - - - - - - - //

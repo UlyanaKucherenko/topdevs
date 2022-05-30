@@ -1,0 +1,136 @@
+.block {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;;
+}
+
+.inline {
+  display: inline;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.hidden {
+  visibility: hidden
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.card-filled {
+  background: linear-gradient(120.58deg, #F8F7F7 -6.06%, #F8F7F7 23.63%, #F8F7F7 47.92%, #F8F8F8 71.11%);
+  box-shadow: 2px 4px 25px rgba(124, 124, 124, 0.4);
+  border-radius: 3rem;
+  padding: 3rem;
+  &--img-out {
+    .first-card {
+      &__img {
+        position: absolute;
+      }
+    }
+  }
+}
+
+.card-rounded {
+  border-radius: 50%;
+  text-align: center;
+}
+
+.ratio {
+  --height-percentage: 100%;
+  position: relative;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: var(--height-percentage);
+  }
+
+  &__inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.bg-absolute {
+  position: absolute;
+  z-index: -1;
+}
+
+.z-default {
+  z-index: 0;
+}
+
+.z-default-rel {
+  z-index: 0;
+  position: relative;
+}
+
+.z-default-abs {
+  z-index: 0;
+  position: absolute;
+}
+
+.z-negative {
+  z-index: -1;
+}
+
+.img-shadow {
+  box-shadow: 8px 8px 24px rgba(94, 94, 94, 0.25), -8px -8px 24px #FFFFFF;
+}

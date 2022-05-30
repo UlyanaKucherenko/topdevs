@@ -1,0 +1,114 @@
+// - - - - - - - - - - - ANIMATIONS - - - - - - - - //
+
+@mixin arrow-hover {
+  animation: bouncing-horizontal infinite 1.5s;
+}
+
+@keyframes bouncing-horizontal {
+  20% {
+    transform: translateX(5px);
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -  //
+
+
+// - - - - - - - - - - - TEXT - - - - - - - - //
+
+@mixin text-h1 {
+  font-size: 7rem;
+  letter-spacing: .05em;
+  line-height: 120%;
+
+  @media (max-width: 1400px) {
+    font-size: 5.4rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 4.8rem;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 4rem;
+  }
+}
+
+@mixin text-h2 {
+  font-size: 5.4rem;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+
+  @media (max-width: 1400px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 3.6rem;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 3.4rem;
+  }
+}
+
+@mixin text-h3 {
+  font-size: 2.4rem;
+  font-family: var(--ProximaNova);
+  line-height: 150%;
+  font-weight: 600;
+
+  @media (max-width: 1400px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 1.8rem;
+  }
+}
+
+@mixin text-h4 {
+  font-size: 2rem;
+  font-family: var(--ProximaNova);
+  font-weight: 700;
+
+  @media (max-width: 1400px) {
+    font-size: 1.6rem;
+  }
+}
+
+
+@mixin text-lg {
+  font-size: 2.4rem;
+
+  @media (max-width: 1400px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 1.8rem;
+  }
+}
+
+@mixin text-md {
+  font-size: 2rem;
+
+  @media (max-width: 1400px) {
+    font-size: 1.8rem;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 1.6rem;
+  }
+}
+
+@mixin text-p {
+  font-size: 1.6rem;
+  font-family: var(--ProximaNova);
+  line-height: 160%;
+
+  @media (max-width: 1400px) {
+    font-size: 1.4rem;
+  }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -  //

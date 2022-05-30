@@ -1,0 +1,75 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: var(--black-main);
+}
+
+html, body {
+  font-family: var(--ProximaNova);
+  background-color: var(--white-main);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  overflow: hidden;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+}
+
+input, textarea {
+  border: 0;
+  
+  &:focus {
+    outline-offset: 0;
+    outline: none;
+  }
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6, .text-h1, .text-h2, .text-h3, .text-h4 {
+  font-family: var(--Muli);
+  font-weight: bold;
+}
+
+h1, .text-h1 {
+  @include text-h1;
+}
+
+h2, .text-h2 {
+  @include text-h2;
+}
+
+h3, .text-h3 {
+  @include text-h3;
+}
+
+h4, .text-h4 {
+  @include text-h4;
+}
+
+p, .text-p {
+  @include text-p;
+}

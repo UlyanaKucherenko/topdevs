@@ -1,0 +1,289 @@
+@import "mixins";
+
+.text {
+
+  &-xll {
+    font-size: 4.8rem;
+
+    @media (max-width: 1200px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &-xl {
+    font-size: 3rem;
+
+    @media (max-width: 1400px) {
+      font-size: 2.4rem;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 2rem;
+    }
+  }
+
+  &-lg {
+    @include text-lg;
+  }
+
+  &-md {
+    @include text-md;
+  }
+
+  &-sm {
+    font-size: 1.4rem;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-with-icon {
+    // padding-left: .8em;
+  }
+
+  &-with-border {
+    position: relative;
+
+    &:after {
+      content: "";
+      pointer-events: none;
+      position: absolute;
+      top: calc(100% + 3px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      transition: 0.5s ease-in-out;
+      background-color: var(--red-light);
+      opacity: 0;
+    }
+
+    &:hover:after {
+      width: 100%;
+      opacity: 1;
+    }
+
+    &--no-hover {
+      &:after {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+  }
+
+  &-with-lines {
+    position: relative;
+
+    &:before {
+      content: '';
+      height: .8em;
+      width: .6em;
+      position: absolute;
+      left: -.6em;
+      top: 0.125em;
+      background-image: url('/images/site/double-lines.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--has-width {
+      padding-left: .6em;
+
+      &:before {
+        left: 0;
+      }
+    }
+  }
+
+  &-with-square {
+    position: relative;
+    --color: var(--blue-main);
+
+    &:before {
+      content: '';
+      height: 0.375em;
+      width: 0.375em;
+      position: absolute;
+      left: -1em;
+      top: .6em;
+      background-color: var(--color);
+    }
+  }
+
+  &-with-dot {
+    position: relative;
+    --color: var(--red-lighter);
+
+    &:before {
+      content: '';
+      height: .375em;
+      width: .375em;
+      position: absolute;
+      left: -.9em;
+      top: 0.3em;
+      border-radius: 50%;
+      background-color: var(--color);
+    }
+
+    &--blue {
+      --color: var(--blue-main);
+    }
+
+    &--has-width {
+      padding-left: .6em;
+
+      &:before {
+        left: 0;
+      }
+    }
+  }
+
+  &-quote {
+    position: relative;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 1.16em;
+      height: 1em;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &:before {
+      transform: translate(-38%, -20%);
+      background-image: url('/images/site/icons/quote-open.svg');
+    }
+
+    &:after {
+      transform: translate(-40%, 52%);
+      background-image: url('/images/site/icons/quote-close.svg');
+    }
+  }
+
+  &-with-checkmark {
+    position: relative;
+
+    &:before {
+      content: '';
+      height: .8em;
+      width: 1em;
+      position: absolute;
+      left: -1.3em;
+      top: .1em;
+      background-image: url('/images/site/checkmark.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--has-width {
+      padding-left: 1.3em;
+
+      &:before {
+        left: 0;
+      }
+    }
+  }
+
+  &-red-main {
+    --current-color: var(--red-main);
+  }
+
+  &-red-dark {
+    --current-color: var(--red-dark);
+  }
+
+  &-red-light {
+    --current-color: var(--red-light);
+  }
+
+  &-red-gradient {
+    --current-color: var(--red-gradient);
+    background: var(--red-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &-black-main {
+    --current-color: var(--black-main);
+  }
+
+  &-black-dark {
+    --current-color: var(--black-dark);
+  }
+
+  &-white-main {
+    --current-color: var(--white-main);
+  }
+
+  &-white-clear {
+    --current-color: var(--white-clear);
+  }
+
+  &-blue-light {
+    --current-color: var(--blue-light);
+  }
+
+  &-red-main, &-red-dark, &-red-light, &-black-main, &-black-dark, &-white-main, &-white-clear, &-blue-light {
+    color: var(--current-color);
+    transition: 1s;
+
+    &--hover {
+      color: inherit;
+
+      &:hover {
+        color: var(--current-color);
+      }
+    }
+  }
+
+  &-normal {
+    font-weight: 400;
+  }
+
+  &-semibold {
+    font-weight: 600;
+  }
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-italic {
+    font-style: italic;
+  }
+
+  &-uppercase {
+    text-transform: uppercase;
+  }
+
+  &-proxima-nova {
+    font-family: var(--ProximaNova);
+  }
+
+  &-muli {
+    font-family: var(--Muli);
+  }
+
+  &-roboto {
+    font-family: var(--Roboto);
+  }
+}
+
+.link {
+  color: var(--blue-light);
+}
+
+h1.text-with-lines:before {
+  top: 0.225em !important; 
+}
+
+h2.text-with-lines:before {
+  top: 0.225em !important; 
+}

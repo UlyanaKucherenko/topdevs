@@ -1,0 +1,13 @@
+.v-application {
+  font-family: var(--ProximaNova);
+  line-height: 1.3;
+
+  .headline {
+    font-family: var(--ProximaNova) !important;
+  }
+}
+.v-toolbar {
+  &__content {
+    justify-content: space-between;
+  }
+}

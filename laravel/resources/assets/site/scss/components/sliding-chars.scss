@@ -1,0 +1,32 @@
+.sliding-chars {
+  display: inline-block;
+
+  * {
+    display: inline-block;
+  line-height: 100%;
+}
+}
+
+.sliding-chars__word {}
+
+.sliding-chars__char {
+  overflow: hidden;
+  position: relative;
+  // min-width: 1.5rem;
+}
+
+.sliding-chars__left {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.sliding-chars__right {
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.sliding-chars__space {
+  width: .3em;
+}

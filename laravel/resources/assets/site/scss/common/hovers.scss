@@ -1,0 +1,19 @@
+.hover-bottom-line {
+  &:after {
+    content: '';
+    display: block;
+    height: 0.1rem;
+    opacity: 0;
+    margin-top: 0.4rem;
+    width: 0;
+    transition: .2s;
+    background: var(--white-clear);
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}

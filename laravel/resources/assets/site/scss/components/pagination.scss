@@ -1,0 +1,27 @@
+.pagination {
+  display: flex;
+  font-weight: 600;
+  user-select: none;
+
+  li {
+    margin-right: .5rem;
+
+    a {
+      outline: none;
+    }
+
+    &:first-child, &:last-child {
+      display: none;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .active {
+    a {
+      color: var(--red-light);
+    }
+  }
+}
